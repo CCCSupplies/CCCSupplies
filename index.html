@@ -1,357 +1,529 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CCC Supplys — Safety Supplies, Tools & Contractor Essentials | Cross Country Contractors LLC</title>
-<meta name="description" content="CCC Supplys (Cross Country Contractors LLC) — PPE, tools, shop supplies and maintenance essentials for contractors, government agencies and businesses. Build your list and request a quote.">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CCC Supplys — Cross Country Contractors LLC | Safety Supplies, Tools &amp; Contractor Supply</title>
+<meta name="description" content="CCC Supplys (Cross Country Contractors LLC) — safety supplies, PPE, tools and contractor essentials. Browse the full catalog, build a quote list, and get fast bulk pricing. Call (346) 337-9514.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
 <style>
   :root{
-    --ink:#14202b; --ink2:#3c4c5c; --paper:#f7f5f0; --card:#ffffff;
-    --accent:#e8641c; --accent-dark:#c24e10; --navy:#10222f; --line:#e2ddd2;
+    --bg:#0D1B24; --bg2:#0A141D; --panel:#132238; --panel2:#182B47;
+    --ink:#FFFFFF; --ink2:#C3CEDA; --ink3:#8FA3BC;
+    --orange:#FF5E00; --orange2:#FF7A29; --line:#22344D;
   }
   *{box-sizing:border-box; margin:0; padding:0;}
-  body{font-family:Georgia,'Times New Roman',serif; background:var(--paper); color:var(--ink); line-height:1.55;}
-  a{color:var(--accent-dark);}
-  .wrap{max-width:1080px; margin:0 auto; padding:0 20px;}
-  header{background:var(--navy); color:#fff; position:sticky; top:0; z-index:50; box-shadow:0 2px 10px rgba(0,0,0,.25);}
-  .header-in{display:flex; flex-wrap:wrap; align-items:center; gap:10px 22px; padding:14px 0;}
-  .brand{font-size:1.55rem; font-weight:bold; letter-spacing:.5px; color:#fff; text-decoration:none;}
-  .brand span{color:var(--accent);}
-  .brand small{display:block; font-size:.72rem; font-weight:normal; letter-spacing:2px; text-transform:uppercase; color:#b9c7d2; font-family:Arial,Helvetica,sans-serif;}
-  nav{margin-left:auto; display:flex; flex-wrap:wrap; gap:4px 18px; font-family:Arial,Helvetica,sans-serif; font-size:.92rem;}
-  nav a{color:#dfe8ee; text-decoration:none;}
-  nav a:hover{color:#fff; text-decoration:underline;}
-  .callbtn{background:var(--accent); color:#fff !important; padding:7px 14px; border-radius:6px; font-weight:bold;}
-  .callbtn:hover{background:var(--accent-dark); text-decoration:none !important;}
-  .hero{background:linear-gradient(160deg,#16303f 0%,#10222f 60%,#0b1822 100%); color:#fff; padding:64px 0 54px;}
-  .hero .kicker{font-family:Arial,Helvetica,sans-serif; text-transform:uppercase; letter-spacing:3px; font-size:.78rem; color:#f0a35e; margin-bottom:14px;}
-  .hero h1{font-size:2.7rem; line-height:1.12; max-width:720px;}
-  .hero h1 em{color:var(--accent); font-style:normal;}
-  .hero p.lede{margin-top:16px; font-size:1.13rem; color:#cfdde7; max-width:640px;}
-  .hero .cta-row{margin-top:28px; display:flex; flex-wrap:wrap; gap:12px; font-family:Arial,Helvetica,sans-serif;}
-  .btn{display:inline-block; padding:13px 24px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:1rem;}
-  .btn-primary{background:var(--accent); color:#fff;}
-  .btn-primary:hover{background:var(--accent-dark);}
-  .btn-ghost{border:2px solid #5b7285; color:#eaf1f6;}
-  .btn-ghost:hover{border-color:#fff; color:#fff;}
-  .ship-line{margin-top:22px; font-family:Arial,Helvetica,sans-serif; font-size:.95rem; color:#a9bcc9;}
-  .essentials{padding:44px 0 6px;}
-  .essentials h2, .section h2{font-size:1.7rem; margin-bottom:6px;}
-  .essentials .sub, .section .sub{color:var(--ink2); margin-bottom:22px;}
-  .card-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px;}
-  .ecard{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px 18px;}
-  .ecard .num{font-family:Arial,Helvetica,sans-serif; color:var(--accent); font-weight:bold; font-size:.85rem; letter-spacing:1px;}
-  .ecard h3{margin:6px 0 4px; font-size:1.15rem;}
-  .ecard p{color:var(--ink2); font-size:.95rem;}
-  .ecard img{width:100%; height:150px; object-fit:cover; border-radius:8px; margin-bottom:12px; display:block; background:#fff;}
-  .ecard img.contain{object-fit:contain;}
-  .section{padding:44px 0;}
-  .serve-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; margin-top:8px;}
-  .serve-grid div{background:var(--card); border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:8px; padding:14px 16px; font-size:1.02rem;}
-  .dept-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;}
-  .dept{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px;}
-  .dept h3{font-size:1.08rem; margin-bottom:4px;}
-  .dept p{color:var(--ink2); font-size:.93rem; margin-bottom:12px; min-height:42px;}
-  .dept button, .addbtn{font-family:Arial,Helvetica,sans-serif; background:var(--navy); color:#fff; border:none; padding:9px 14px; border-radius:6px; cursor:pointer; font-size:.9rem; font-weight:bold;}
-  .dept button:hover, .addbtn:hover{background:var(--accent-dark);}
+  html{scroll-behavior:smooth;}
+  body{background:var(--bg); color:var(--ink); font:16px/1.55 'Inter',Arial,Helvetica,sans-serif; padding-bottom:64px;}
+  a{color:var(--orange2);}
+  .wrap{max-width:1160px; margin:0 auto; padding:0 20px;}
+  h1,h2,h3,.mh{font-family:'Montserrat',Arial,sans-serif;}
+  /* top value bar */
+  .topbar{background:var(--orange); color:#14100C; text-align:center; font-weight:700; font-size:.82rem; letter-spacing:.06em; padding:8px 14px; text-transform:uppercase;}
+  /* header */
+  header.site{position:sticky; top:0; z-index:60; background:rgba(13,27,36,.97); border-bottom:1px solid var(--line);}
+  .hrow{display:flex; align-items:center; gap:14px; padding:12px 0 6px; flex-wrap:wrap;}
+  .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:var(--ink);}
+  .brand .mark{flex:none;}
+  .brand .bname{font-family:'Montserrat',sans-serif; font-weight:900; font-size:1.45rem; letter-spacing:.02em; line-height:1;}
+  .brand .bname span{color:var(--orange);}
+  .brand .bsub{font-size:.68rem; letter-spacing:.18em; color:var(--ink3); text-transform:uppercase; margin-top:3px;}
+  nav.main{margin-left:auto; display:flex; gap:20px; flex-wrap:wrap;}
+  nav.main a{color:var(--ink2); text-decoration:none; font-size:.92rem; font-weight:600;}
+  nav.main a:hover{color:#fff;}
+  .hbtns{display:flex; gap:10px; padding:6px 0 14px; flex-wrap:wrap;}
+  .btn{display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:10px; padding:13px 22px; font-weight:700; font-size:.98rem; text-decoration:none; border:2px solid transparent; cursor:pointer; font-family:'Inter',sans-serif;}
+  .btn-orange{background:var(--orange); color:#fff;}
+  .btn-orange:hover{background:var(--orange2);}
+  .btn-white{background:#fff; color:#10222F;}
+  .btn-white:hover{background:#E8EEF5;}
+  .btn-outline{background:transparent; color:#fff; border-color:#fff;}
+  .btn-outline:hover{background:rgba(255,255,255,.1);}
+  .hbtns .btn{flex:1 1 220px;}
+  /* hero */
+  .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--line);}
+  .hero::before{content:""; position:absolute; inset:0; background:url('hero-bg.jpg') center/cover no-repeat; opacity:.16;}
+  .hero::after{content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(13,27,36,.55), rgba(13,27,36,.92));}
+  .hero .wrap{position:relative; z-index:2; padding:56px 20px 46px;}
+  .kicker{color:var(--orange2); font-weight:700; letter-spacing:.22em; font-size:.78rem; text-transform:uppercase; margin-bottom:16px;}
+  .hero h1{font-size:clamp(2.3rem,6vw,4rem); font-weight:900; line-height:1.04; letter-spacing:-.01em; max-width:15ch;}
+  .hero h1 .o{color:var(--orange);}
+  .hero p.lede{color:var(--ink2); font-size:1.13rem; max-width:62ch; margin:18px 0 26px;}
+  .hero .hbtns2{display:flex; gap:12px; flex-wrap:wrap;}
+  .hero .hbtns2 .btn{flex:0 1 auto;}
+  /* fast quote card */
+  .fq{margin-top:30px; background:var(--bg2); border:2px solid var(--orange); border-radius:16px; padding:22px; max-width:760px; position:relative;}
+  .fq .badge{position:absolute; top:-14px; right:18px; background:var(--orange); color:#fff; font-weight:800; font-size:.78rem; letter-spacing:.05em; padding:6px 12px; border-radius:999px; text-transform:uppercase;}
+  .fq h2{font-size:1.3rem; font-weight:800; margin-bottom:6px;}
+  .fq p{color:var(--ink2); font-size:.95rem; margin-bottom:14px;}
+  .fq label{display:block; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; color:var(--ink3); margin:12px 0 6px;}
+  .fq textarea,.fq input{width:100%; background:var(--panel); border:1px solid var(--line); border-radius:10px; color:#fff; padding:12px; font:inherit; font-size:.98rem;}
+  .fq textarea{min-height:96px; resize:vertical;}
+  .fq .row{display:flex; gap:10px; flex-wrap:wrap;}
+  .fq .row>div{flex:1 1 200px;}
+  .fq .send{margin-top:16px; width:100%; font-size:1.05rem;}
+  .fq .fine{color:var(--ink3); font-size:.82rem; margin-top:10px;}
+  /* trust strip */
+  .trust{border-bottom:1px solid var(--line); background:var(--bg2);}
+  .trust .wrap{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:0; padding-top:0; padding-bottom:0;}
+  .titem{display:flex; gap:12px; align-items:center; padding:18px 14px; border-left:1px solid var(--line);}
+  .titem:first-child{border-left:none;}
+  .titem .ic{font-size:1.5rem; color:var(--orange); flex:none;}
+  .titem b{display:block; font-size:.95rem;}
+  .titem span{color:var(--ink3); font-size:.82rem;}
+  /* sections */
+  section.block{padding:52px 0;}
+  .kick2{color:var(--orange2); font-weight:700; letter-spacing:.2em; font-size:.75rem; text-transform:uppercase; margin-bottom:10px;}
+  h2.sec{font-size:clamp(1.7rem,4vw,2.5rem); font-weight:900; line-height:1.1; margin-bottom:12px;}
+  p.sub{color:var(--ink2); max-width:66ch; margin-bottom:26px;}
+  /* department cards (white on navy) */
+  .dgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(215px,1fr)); gap:16px;}
+  .dcard{background:#fff; color:#10222F; border-radius:14px; overflow:hidden; text-align:left; border:none; cursor:pointer; padding:0; font:inherit; display:flex; flex-direction:column; transition:transform .15s ease, box-shadow .15s ease;}
+  .dcard:hover{transform:translateY(-3px); box-shadow:0 12px 28px rgba(0,0,0,.35);}
+  .dcard img{width:100%; height:132px; object-fit:cover; display:block; background:#EEF2F6;}
+  .dcard .db{padding:14px 16px 16px; display:flex; flex-direction:column; gap:4px; flex:1;}
+  .dcard h3{font-size:1.02rem; font-weight:800; line-height:1.25;}
+  .dcard p{color:#4A5B70; font-size:.85rem; flex:1;}
+  .dcard .meta{display:flex; justify-content:space-between; align-items:center; margin-top:8px;}
+  .dcard .cnt{font-size:.78rem; font-weight:700; color:#7A8794; letter-spacing:.04em; text-transform:uppercase;}
+  .dcard .go{color:var(--orange); font-weight:800; font-size:.88rem;}
+  /* who we serve */
+  .serve-list{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:12px 26px;}
+  .serve-item{border-left:4px solid var(--orange); padding:6px 0 6px 14px; font-weight:700; font-size:1.05rem;}
+  .serve-item span{display:block; font-weight:400; font-size:.86rem; color:var(--ink2); margin-top:2px;}
+  /* steps */
   .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px;}
-  .step{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px 18px;}
-  .step .n{font-size:1.9rem; color:var(--accent); font-weight:bold; font-family:Arial,Helvetica,sans-serif;}
-  .step h3{margin:4px 0 6px;}
-  .step p{color:var(--ink2); font-size:.96rem;}
-  .builder{background:var(--navy); color:#eaf1f6; border-radius:16px; padding:28px; margin:10px 0 6px;}
-  .builder h2{color:#fff;}
-  .builder .sub{color:#a9bcc9;}
-  .bgrid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
-  @media (max-width:820px){ .bgrid{grid-template-columns:1fr;} .hero h1{font-size:2.1rem;} }
-  .builder label{font-family:Arial,Helvetica,sans-serif; font-size:.85rem; letter-spacing:.4px; display:block; margin:12px 0 5px; color:#cfe0ec;}
-  .builder select, .builder input, .builder textarea{width:100%; padding:10px 12px; border-radius:7px; border:1px solid #33505f; background:#0d1d29; color:#fff; font-size:.98rem; font-family:Arial,Helvetica,sans-serif;}
-  .builder textarea{resize:vertical;}
-  .qty-row{display:flex; gap:10px;}
-  .qty-row .q{flex:0 0 92px;}
-  .qty-row .grow{flex:1;}
-  table.quote{width:100%; border-collapse:collapse; font-family:Arial,Helvetica,sans-serif; font-size:.92rem; margin-top:6px;}
-  table.quote th{text-align:left; color:#a9bcc9; font-weight:normal; border-bottom:1px solid #33505f; padding:6px 4px;}
-  table.quote td{border-bottom:1px solid #22394a; padding:7px 4px; vertical-align:top;}
-  table.quote .rm{background:none; border:none; color:#f0937e; cursor:pointer; font-size:1rem; padding:0 2px;}
-  .empty-note{color:#8fa9bb; font-family:Arial,Helvetica,sans-serif; font-size:.92rem; padding:10px 0;}
-  .submit-row{margin-top:18px; display:flex; flex-wrap:wrap; gap:12px; align-items:center;}
-  .count-pill{font-family:Arial,Helvetica,sans-serif; background:#0d1d29; border:1px solid #33505f; padding:9px 14px; border-radius:20px; font-size:.9rem;}
-  .fineprint{font-family:Arial,Helvetica,sans-serif; font-size:.82rem; color:#8fa9bb; margin-top:12px;}
-  .faq details{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin-bottom:10px;}
-  .faq summary{font-weight:bold; cursor:pointer; font-size:1.03rem;}
-  .faq p{color:var(--ink2); margin-top:8px;}
-  .contact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px;}
-  .cbox{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 18px;}
-  .cbox h3{margin-bottom:8px;}
-  .cbox p{color:var(--ink2); font-size:.97rem;}
-  .cbox a{font-weight:bold;}
-  footer{background:var(--navy); color:#b9c7d2; padding:34px 0 40px; margin-top:20px; font-size:.95rem;}
-  footer .brand{font-size:1.25rem;}
-  footer a{color:#e8b48c;}
-  .foot-grid{display:flex; flex-wrap:wrap; gap:8px 40px; margin-top:10px; font-family:Arial,Helvetica,sans-serif; font-size:.9rem;}
+  .step{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px;}
+  .step .n{color:var(--orange); font-family:'Montserrat',sans-serif; font-weight:900; font-size:1.5rem;}
+  .step h3{font-size:1.08rem; margin:8px 0 6px;}
+  .step p{color:var(--ink2); font-size:.92rem;}
+  /* catalog (light section) */
+  .catalog-sec{background:#F4F6F9; color:#10222F;}
+  .catalog-sec h2.sec{color:#0D1B24;}
+  .catalog-sec p.sub{color:#4A5B70;}
+  .searchrow{display:flex; gap:10px; flex-wrap:wrap; margin-bottom:14px;}
+  .searchrow input{flex:1 1 260px; padding:13px 14px; border:1.5px solid #CBD5E1; border-radius:10px; font:inherit; font-size:1rem; background:#fff; color:#10222F;}
+  .chips{display:flex; gap:8px; overflow-x:auto; padding-bottom:10px; margin-bottom:6px; scrollbar-width:none;}
+  .chips::-webkit-scrollbar{display:none;}
+  .chip{flex:none; background:#fff; border:1.5px solid #D3DCE6; color:#10222F; padding:8px 14px; border-radius:999px; font-size:.84rem; font-weight:600; cursor:pointer; font-family:'Inter',sans-serif;}
+  .chip.active{background:#0D1B24; border-color:#0D1B24; color:#fff;}
+  .chip.subchip.active{background:var(--orange); border-color:var(--orange);}
+  .cathead{display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; margin:14px 0 4px;}
+  .cathead h3{font-size:1.5rem; font-weight:900; color:#0D1B24;}
+  .cathead .cntline{color:#5C6F84; font-size:.9rem;}
+  .pgrid{display:grid; grid-template-columns:repeat(auto-fill,minmax(250px,1fr)); gap:14px; margin-top:14px;}
+  .pcard{background:#fff; border:1px solid #DCE3EC; border-radius:12px; overflow:hidden; display:flex; flex-direction:column; box-shadow:0 2px 6px rgba(11,23,38,.04);}
+  .pcard img{width:100%; height:170px; object-fit:cover; display:block; background:#EEF2F6;}
+  .pcard .pb{padding:14px 16px 16px; display:flex; flex-direction:column; gap:5px; flex:1;}
+  .pcard .fam{font-size:.72rem; color:#7A8794;}
+  .pcard .sub2{font-size:.68rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--orange);}
+  .pcard h4{font-size:1rem; font-weight:700; color:#0D1B24; line-height:1.3;}
+  .pcard .itemno{font-size:.8rem; color:#5C6F84;}
+  .pcard select{width:100%; margin-top:6px; padding:9px; border:1.5px solid #CBD5E1; border-radius:8px; font:inherit; font-size:.88rem; background:#fff; color:#10222F;}
+  .pcard .addrow{display:flex; gap:8px; margin-top:auto; padding-top:12px;}
+  .pcard .qty{width:64px; padding:10px 6px; border:1.5px solid #CBD5E1; border-radius:8px; font-weight:700; text-align:center; font-size:.92rem; color:#10222F;}
+  .pcard .add{flex:1; background:var(--orange); color:#fff; border:none; border-radius:8px; font-weight:700; font-size:.9rem; cursor:pointer; padding:11px;}
+  .pcard .add:hover{background:var(--orange2);}
+  .pcard .add.added{background:#1B7A43;}
+  .pager{display:flex; gap:10px; align-items:center; justify-content:center; margin-top:22px; flex-wrap:wrap;}
+  .pager button{background:#fff; border:1.5px solid #CBD5E1; color:#10222F; border-radius:8px; padding:10px 18px; font-weight:700; cursor:pointer; font-family:'Inter',sans-serif;}
+  .pager button:disabled{opacity:.4; cursor:default;}
+  .pager .pinfo{color:#5C6F84; font-size:.9rem; font-weight:600;}
+  .empty{color:#5C6F84; padding:26px 0; font-size:.98rem;}
+  /* faq + contact */
+  .faq{display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:16px;}
+  .qa{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px;}
+  .qa h3{font-size:1.02rem; margin-bottom:8px;}
+  .qa p{color:var(--ink2); font-size:.93rem;}
+  .cgrid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px;}
+  .cbox{background:var(--panel); border:1px solid var(--line); border-radius:14px; padding:20px;}
+  .cbox .lab{font-size:.72rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink3); margin-bottom:8px; font-weight:700;}
+  .cbox .big{font-size:1.12rem; font-weight:700;}
+  .cbox a{color:#fff; text-decoration:none;}
+  .cbox a:hover{color:var(--orange2);}
+  footer.site{border-top:1px solid var(--line); padding:30px 0 36px; color:var(--ink3); font-size:.88rem; background:var(--bg2);}
+  footer.site .wrap{display:flex; gap:14px; flex-wrap:wrap; justify-content:space-between; align-items:center;}
+  /* sticky bottom bar */
+  .stickybar{position:fixed; left:0; right:0; bottom:0; z-index:80; background:rgba(10,20,29,.98); border-top:1px solid var(--line); padding:10px 12px; display:flex; gap:10px;}
+  .stickybar a,.stickybar button{flex:1; display:inline-flex; align-items:center; justify-content:center; gap:8px; border-radius:10px; padding:13px 10px; font-weight:800; font-size:.95rem; text-decoration:none; cursor:pointer; font-family:'Inter',sans-serif;}
+  .sb-call{background:var(--panel); color:#fff; border:1px solid var(--line);}
+  .sb-quote{background:var(--orange); color:#fff; border:none; flex:1.3;}
+  .sb-quote .n{background:#fff; color:var(--orange); border-radius:999px; min-width:24px; height:24px; display:inline-flex; align-items:center; justify-content:center; font-size:.85rem; padding:0 6px;}
+  /* quote drawer */
+  .backdrop{display:none; position:fixed; inset:0; background:rgba(5,12,20,.8); z-index:100; justify-content:flex-end;}
+  .backdrop.open{display:flex;}
+  .drawer{background:#fff; color:#10222F; width:100%; max-width:460px; height:100%; overflow-y:auto; padding:20px; display:flex; flex-direction:column;}
+  .drawer-head{display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid #E2E8F0; padding-bottom:14px; margin-bottom:14px;}
+  .drawer-head h3{font-size:1.25rem; font-weight:800; color:#0D1B24; font-family:'Montserrat',sans-serif;}
+  .close-x{background:#F1F5F9; border:none; width:34px; height:34px; border-radius:50%; font-weight:800; cursor:pointer; color:#10222F;}
+  .qrow{display:flex; justify-content:space-between; align-items:center; gap:8px; background:#F8FAFC; border:1px solid #E2E8F0; padding:10px 12px; border-radius:8px; margin-bottom:8px; font-size:.86rem;}
+  .qrow .qn{font-weight:600;}
+  .qrow .qs{color:#5C6F84; font-size:.78rem;}
+  .qrow .qq{display:flex; align-items:center; gap:6px; flex:none;}
+  .qrow .qq input{width:52px; padding:7px 4px; border:1.5px solid #CBD5E1; border-radius:6px; font-weight:700; text-align:center; color:#10222F;}
+  .qrow .rm{color:#DC2626; background:none; border:none; font-weight:700; cursor:pointer; font-size:.82rem;}
+  .drawer label{display:block; font-size:.8rem; font-weight:700; margin:12px 0 4px; color:#0D1B24;}
+  .drawer input[type=text],.drawer input[type=email],.drawer input[type=tel],.drawer textarea{width:100%; padding:10px 12px; border:1.5px solid #CBD5E1; border-radius:8px; font:inherit; font-size:.92rem; color:#10222F;}
+  .drawer textarea{min-height:64px; resize:vertical;}
+  .drawer .submit{margin-top:16px; width:100%;}
+  .drawer .fine{color:#7A8794; font-size:.8rem; margin-top:10px;}
+  .toast{position:fixed; left:50%; transform:translateX(-50%); bottom:84px; background:#1B7A43; color:#fff; font-weight:700; padding:11px 18px; border-radius:999px; z-index:120; display:none; box-shadow:0 8px 22px rgba(0,0,0,.35); font-size:.92rem;}
+  @media (max-width:640px){ .titem{border-left:none; border-top:1px solid var(--line);} .titem:first-child{border-top:none;} nav.main{display:none;} }
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap header-in">
-    <a class="brand" href="#top">CCC <span>Supplys</span><small>Cross Country Contractors LLC</small></a>
-    <nav>
-      <a href="#departments">Shop Departments</a>
-      <a href="#quote">Quote Process</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
-      <a class="callbtn" href="tel:+13463379514">Call: (346) 337-9514</a>
-    </nav>
+<div class="topbar">Bulk quote pricing &nbsp;•&nbsp; Government &amp; business accounts &nbsp;•&nbsp; Send your list — we confirm price &amp; delivery fast</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="hrow">
+      <a class="brand" href="#top" aria-label="CCC Supplys home">
+        <svg class="mark" width="46" height="46" viewBox="0 0 48 48" aria-hidden="true"><path d="M24 2 42 8v14c0 11-7.6 19.4-18 24C13.6 41.4 6 33 6 22V8Z" fill="#FF5E00"/><path d="M24 6.2 38 10.8V22c0 9-6.2 16-14 19.8C16.2 38 10 31 10 22V10.8Z" fill="#0D1B24"/><text x="24" y="27" text-anchor="middle" font-family="Montserrat,Arial,sans-serif" font-weight="900" font-size="11.5" fill="#FFFFFF">CCC</text></svg>
+        <span><span class="bname">CCC <span>SUPPLYS</span></span><div class="bsub">Cross Country Contractors LLC</div></span>
+      </a>
+      <nav class="main">
+        <a href="#departments">Departments</a>
+        <a href="#catalog">Catalog</a>
+        <a href="#serve">Who We Serve</a>
+        <a href="#how">How Quotes Work</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <div class="hbtns">
+      <a class="btn btn-orange" href="#catalog">Request a Quote — Browse the Catalog</a>
+      <a class="btn btn-white" href="tel:+13463379514">Call: (346) 337-9514</a>
+    </div>
   </div>
 </header>
 
-<section class="hero" id="top">
+<div class="hero" id="top">
   <div class="wrap">
-    <div class="kicker">Serving contractors, government &amp; business customers</div>
-    <h1>Safety supplies. Tools. <em>Built for the work ahead.</em></h1>
-    <p class="lede">PPE, tools, shop supplies and maintenance essentials for contractors, government agencies, businesses and organizations of all kinds — from big operations to small, family-owned crews.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#builder">Build Your Quote List</a>
-      <a class="btn btn-ghost" href="#departments">Browse Departments</a>
+    <div class="kicker">Serving contractors, government and business customers</div>
+    <h1>Safety supplies &amp; tools. <span class="o">Built for the work ahead.</span></h1>
+    <p class="lede">PPE, tools, shop supplies and maintenance essentials — the full working catalog, on one page. Build your list, send it, and we come back with pricing and delivery confirmed. No account, no checkout maze.</p>
+    <div class="hbtns2">
+      <a class="btn btn-orange" href="#catalog">Get a Fast Quote</a>
+      <a class="btn btn-outline" href="tel:+13463379514">Call (346) 337-9514</a>
     </div>
-    <p class="ship-line">Send us your list — we confirm availability, pricing and delivery, then the supplies move.</p>
-  </div>
-</section>
 
-<section class="essentials">
-  <div class="wrap">
-    <h2>Everyday essentials, built around your crew</h2>
-    <p class="sub">The gear your team reaches for every day — stocked and ready to quote.</p>
-    <div class="card-row">
-      <div class="ecard"><img src="honeycomb-glove.webp" alt="Orange honeycomb work gloves"><div class="num">01</div><h3>Work Gloves</h3><p>Disposable, leather, coated and thermal — the right glove for every hand on the job.</p></div>
-      <div class="ecard"><img src="first-aid.webp" alt="Portable first aid kit"><div class="num">02</div><h3>First Aid</h3><p>Kits, refills and emergency essentials that keep a site ready for anything.</p></div>
-      <div class="ecard"><img src="drill-bits.webp" alt="Black and gold metal drill bits"><div class="num">03</div><h3>Tools &amp; Bits</h3><p>Hand tools, power tools, blades and bits that hold up to daily work.</p></div>
-      <div class="ecard"><img class="contain" src="lucas-red-tacky-grease.webp" alt="Lucas Red N' Tacky Grease"><div class="num">04</div><h3>Shop Supplies</h3><p>Grease, lubricants, cleaners and maintenance essentials that keep operations running.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="wrap">
-    <h2>Who we serve</h2>
-    <p class="sub">CCC Supplys helps keep crews equipped and operations running.</p>
-    <div class="serve-grid">
-      <div>Contractors &amp; Construction Crews</div>
-      <div>Federal, Tribal, State &amp; Local Government Departments</div>
-      <div>Civil Infrastructure</div>
-      <div>Energy Companies</div>
-      <div>Industrial &amp; Commercial Operations</div>
-      <div>Small &amp; Family-Owned Businesses</div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="departments" style="padding-top:10px;">
-  <div class="wrap">
-    <h2>Shop by department</h2>
-    <p class="sub">Go straight to the supplies you need. Pick a department to start your quote list with it.</p>
-    <div class="dept-grid">
-      <div class="dept"><h3>Gloves</h3><p>Disposable, leather, coated and thermal.</p><button onclick="pickDept('Gloves')">Add Gloves Items</button></div>
-      <div class="dept"><h3>Safety &amp; PPE</h3><p>Eye, hearing, head and respiratory protection.</p><button onclick="pickDept('Safety &amp; PPE')">Add Safety &amp; PPE Items</button></div>
-      <div class="dept"><h3>Workwear &amp; Weather Protection</h3><p>Hi-vis, rainwear and cold-weather gear.</p><button onclick="pickDept('Workwear &amp; Weather Protection')">Add Workwear Items</button></div>
-      <div class="dept"><h3>First Aid &amp; Emergency</h3><p>First aid, sunscreen and outdoor protection.</p><button onclick="pickDept('First Aid &amp; Emergency')">Add First Aid Items</button></div>
-      <div class="dept"><h3>Traffic &amp; Jobsite Safety</h3><p>Warning tape, site marking and protection.</p><button onclick="pickDept('Traffic &amp; Jobsite Safety')">Add Traffic &amp; Jobsite Items</button></div>
-      <div class="dept"><h3>Hand Tools</h3><p>Sockets, wrenches and everyday essentials.</p><button onclick="pickDept('Hand Tools')">Add Hand Tool Items</button></div>
-      <div class="dept"><h3>Power &amp; Air Tools</h3><p>Cordless and pneumatic tools, compressors, batteries and chargers.</p><button onclick="pickDept('Power &amp; Air Tools')">Add Power &amp; Air Items</button></div>
-      <div class="dept"><h3>Blades, Bits &amp; Abrasives</h3><p>Cutting, drilling, grinding and sanding.</p><button onclick="pickDept('Blades, Bits &amp; Abrasives')">Add Blades &amp; Bits Items</button></div>
-      <div class="dept"><h3>Electrical &amp; Lighting</h3><p>Cords, connectors, cable ties, work lights and batteries.</p><button onclick="pickDept('Electrical &amp; Lighting')">Add Electrical Items</button></div>
-      <div class="dept"><h3>Cleaning &amp; Maintenance</h3><p>Wipes, cleaners and shop essentials.</p><button onclick="pickDept('Cleaning &amp; Maintenance')">Add Cleaning Items</button></div>
-      <div class="dept"><h3>Shop, Fleet &amp; Material Handling</h3><p>Vehicle service, jacks, hoses, rigging and cargo control.</p><button onclick="pickDept('Shop, Fleet &amp; Material Handling')">Add Shop &amp; Fleet Items</button></div>
-      <div class="dept"><h3>Hardware &amp; Fasteners</h3><p>Screws, anchors, hardware assortments, tapes and sealants.</p><button onclick="pickDept('Hardware &amp; Fasteners')">Add Hardware Items</button></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="quote" style="padding-top:6px;">
-  <div class="wrap">
-    <h2>Request a quote in three steps</h2>
-    <p class="sub">From your list to our inbox. After you submit, we follow up as soon as possible to confirm availability, pricing and delivery details.</p>
-    <div class="steps">
-      <div class="step"><div class="n">01</div><h3>Choose products</h3><p>Browse the departments, or add any item by name or item number.</p></div>
-      <div class="step"><div class="n">02</div><h3>Build your list</h3><p>Choose items, quantities and any special notes — case or pack sizes included.</p></div>
-      <div class="step"><div class="n">03</div><h3>Submit your request</h3><p>Add your contact details and send it. We confirm products, quantities, pricing and delivery with you directly.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="builder" style="padding-top:6px;">
-  <div class="wrap">
-    <div class="builder">
-      <h2>Build your quote list</h2>
-      <p class="sub">Add items from any department — or type in anything you need, even if it's not listed. Nothing is an order until we confirm it with you.</p>
-      <div class="bgrid">
-        <div>
-          <label for="deptSel">Department</label>
-          <select id="deptSel" onchange="fillItems()"></select>
-          <label for="itemSel">Item</label>
-          <select id="itemSel"></select>
-          <label>Quantity &amp; your own item (optional)</label>
-          <div class="qty-row">
-            <div class="q"><input id="qtyIn" type="number" min="1" value="1" aria-label="Quantity"></div>
-            <div class="grow"><input id="customIn" type="text" placeholder="Or type any item / item number"></div>
-          </div>
-          <label for="noteIn">Note for this item (size, case/pack, brand preference)</label>
-          <input id="noteIn" type="text" placeholder="e.g. Size L, case of 12">
-          <div style="margin-top:16px;"><button class="addbtn" onclick="addItem()">+ Add to Quote List</button></div>
-
-          <label for="cName">Your name</label>
-          <input id="cName" type="text" placeholder="Full name">
-          <label for="cCompany">Company / Agency</label>
-          <input id="cCompany" type="text" placeholder="Company name">
-          <label for="cContact">Email or phone</label>
-          <input id="cContact" type="text" placeholder="How we reach you">
-          <label for="cNotes">Anything else we should know?</label>
-          <textarea id="cNotes" rows="3" placeholder="Delivery location, timing, special requests"></textarea>
-        </div>
-        <div>
-          <label>Your quote list</label>
-          <div id="listWrap"></div>
-          <div class="submit-row">
-            <span class="count-pill" id="countPill">0 items</span>
-            <a class="btn btn-primary" id="submitBtn" href="#" onclick="return submitQuote()">Submit Quote Request</a>
-          </div>
-          <p class="fineprint">Submitting opens your email app with the list addressed to CCC Supplys — just press send. Prefer to talk? Call <a href="tel:+13463379514" style="color:#f0a35e;">(346) 337-9514</a> or text us your list. A request does not place an order; we confirm everything with you first.</p>
-        </div>
+    <div class="fq" id="fastquote">
+      <div class="badge">60-Second Fast Quote</div>
+      <h2>Already know what you need?</h2>
+      <p>Type the items — or paste your material list — and send it straight to our inbox. Have a spec sheet or a photo of a list? Attach it in the email that opens.</p>
+      <label for="fq-items">Items you need priced</label>
+      <textarea id="fq-items" placeholder="e.g. Nitrile gloves, large — 20 cases&#10;ANSI safety glasses, clear — 200&#10;12/3 power cord, 100 ft — 12"></textarea>
+      <div class="row">
+        <div><label for="fq-name">Name / Company</label><input id="fq-name" type="text" autocomplete="name"></div>
+        <div><label for="fq-contact">Phone or email</label><input id="fq-contact" type="text" autocomplete="email"></div>
       </div>
+      <button class="btn btn-orange send" type="button" onclick="sendFastQuote()">Send My List for Pricing →</button>
+      <div class="fine">Opens your email app with everything filled in — attach a PDF, CSV or photo of your list there if you have one. Prefer to talk? Call or text <b>(346) 337-9514</b>.</div>
+    </div>
+  </div>
+</div>
+
+<div class="trust">
+  <div class="wrap">
+    <div class="titem"><div class="ic">⛑</div><div><b>ANSI-Rated Safety Gear</b><span>PPE and hi-vis rated for the jobsite</span></div></div>
+    <div class="titem"><div class="ic">🏛</div><div><b>Government &amp; Business Ready</b><span>Crews, companies and agencies served</span></div></div>
+    <div class="titem"><div class="ic">📦</div><div><b>Bulk Quote Pricing</b><span>Case and pallet quantities priced fast</span></div></div>
+    <div class="titem"><div class="ic">⚡</div><div><b>Fast Turnaround</b><span>Send a list — we confirm price &amp; delivery</span></div></div>
+  </div>
+</div>
+
+<section class="block" id="departments" style="padding-top:44px;">
+  <div class="wrap">
+    <div class="kick2">Find your essentials</div>
+    <h2 class="sec">Shop by department.</h2>
+    <p class="sub">Every department is stocked and quotable. Tap one to jump straight into its products — photos, item numbers, sizes and options — and add what you need to your quote list.</p>
+    <div class="dgrid" id="dgrid"></div>
+  </div>
+</section>
+
+<section class="block" id="serve" style="background:var(--bg2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="wrap">
+    <div class="kick2">Who we serve</div>
+    <h2 class="sec">Built around your crew.</h2>
+    <p class="sub">From a two-truck contractor to a federal department, we source the PPE, tools and maintenance supplies that keep crews equipped and operations running.</p>
+    <div class="serve-list">
+      <div class="serve-item">Contractors &amp; Trades<span>Jobsite PPE, tools and consumables by the case</span></div>
+      <div class="serve-item">Federal, Tribal, State &amp; Local Government<span>Departments and agencies of every size</span></div>
+      <div class="serve-item">Civil Infrastructure<span>Road, bridge and utility project supply</span></div>
+      <div class="serve-item">Energy Companies<span>Field crews, plants and service yards</span></div>
+      <div class="serve-item">Industrial &amp; Commercial Operations<span>Shops, fleets, warehouses and facilities</span></div>
+      <div class="serve-item">Small &amp; Family Businesses<span>The same catalog and pricing path — no account required</span></div>
     </div>
   </div>
 </section>
 
-<section class="section faq" style="padding-top:10px;">
+<section class="block" id="how">
   <div class="wrap">
-    <h2>A few useful details</h2>
-    <p class="sub">Questions are welcome — here are the ones we hear most.</p>
-    <details><summary>How do I get pricing?</summary><p>Build your quote list above, add your contact details and submit. We will confirm pricing, availability, pack quantities and delivery with you directly.</p></details>
-    <details><summary>Can I request cases or bulk quantities?</summary><p>Yes. Set the quantity you need and include any preferred case or pack sizes in the item notes, then submit. We will confirm the available options.</p></details>
-    <details><summary>Where do you deliver?</summary><p>Tell us where the job is in your request notes — we confirm delivery options, timing and any shipping cost right in your quote, before anything is ordered.</p></details>
-    <details><summary>Does this site accept orders or payments?</summary><p>No. The site lets you browse departments and send a quote request directly to CCC Supplys. Orders and payments are arranged with us after your quote is confirmed.</p></details>
-    <details><summary>Can I just call or text my list instead?</summary><p>Absolutely. Call or text <a href="tel:+13463379514">(346) 337-9514</a> — or our Arizona line, <a href="tel:+19282272868">(928) 227-2868</a> — and read us the list. Same fast follow-up.</p></details>
-  </div>
-</section>
-
-<section class="section" id="contact" style="padding-top:6px;">
-  <div class="wrap">
-    <h2>Send us a message</h2>
-    <p class="sub">Have a question that doesn't need a quote? Reach out any of these ways and we'll reply as soon as possible.</p>
-    <div class="contact-grid">
-      <div class="cbox"><h3>📞 Call or Text</h3><p>Main line: <a href="tel:+13463379514">(346) 337-9514</a><br>Arizona: <a href="tel:+19282272868">(928) 227-2868</a><br>Text your list and we'll work it up.</p></div>
-      <div class="cbox"><h3>✉️ Email</h3><p><a href="mailto:Crosscountrycontractorssuppliesllc@gmail.com">Crosscountrycontractorssuppliesllc@gmail.com</a><br>Send your list, item numbers, or a photo of what you need.</p></div>
-      <div class="cbox"><h3>📬 Mailing Address</h3><p>CCC Supplys<br>Cross Country Contractors LLC<br>PO Box 90477<br>Tucson, AZ 85752</p></div>
+    <div class="kick2">From your list to our inbox</div>
+    <h2 class="sec">Request a quote in three steps.</h2>
+    <p class="sub">Market prices move — so instead of stale list prices, you lock in live pricing on the day you ask. Send the list, we check stock and confirm price and delivery, you approve, we ship.</p>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Build your list — or send yours</h3><p>Add items from the catalog below, or attach your existing material list, spreadsheet, or a photo of a handwritten list.</p></div>
+      <div class="step"><div class="n">02</div><h3>We confirm live pricing</h3><p>We check real distributor inventory and come back with your itemized bulk price and delivery timeline.</p></div>
+      <div class="step"><div class="n">03</div><h3>Approve &amp; ship</h3><p>Review the quote in your email, approve it, and your order ships. Questions any time: call or text (346) 337-9514.</p></div>
     </div>
   </div>
 </section>
 
-<footer>
+<section class="block catalog-sec" id="catalog">
   <div class="wrap">
-    <a class="brand" href="#top" style="color:#fff; text-decoration:none;">CCC <span style="color:var(--accent);">Supplys</span></a>
-    <p style="margin-top:6px;">Supplies for the work ahead — PPE, tools, shop supplies and maintenance essentials for contractors, government agencies and businesses.</p>
-    <div class="foot-grid">
-      <span>Call: <a href="tel:+13463379514">(346) 337-9514</a></span>
-      <span>Arizona: <a href="tel:+19282272868">(928) 227-2868</a></span>
-      <span>PO Box 90477, Tucson, AZ 85752</span>
-      <span><a href="privacy.html">Privacy Policy</a></span>
+    <div class="kick2">The full catalog</div>
+    <h2 class="sec">Every department. Everything in it.</h2>
+    <p class="sub"><span id="total-line">722 product families · 1,474 item numbers</span> — photos, item numbers and options, no prices shown: your quote locks in live market pricing. Product family photo shown; the exact item in a family can vary.</p>
+    <div class="searchrow">
+      <input id="search" type="search" placeholder="Search the catalog — try &quot;gloves&quot;, &quot;cord&quot;, &quot;tape&quot;, an item #…" aria-label="Search the catalog">
     </div>
-    <p style="margin-top:14px; font-size:.85rem; color:#7e93a3;">© 2026 Cross Country Contractors LLC. All rights reserved.</p>
+    <div class="chips" id="dept-chips"></div>
+    <div class="cathead"><h3 id="cat-title">All products</h3><span class="cntline" id="cat-count"></span></div>
+    <div class="chips" id="sub-chips"></div>
+    <div class="pgrid" id="pgrid"></div>
+    <div class="pager">
+      <button id="pg-prev" type="button">← Prev</button>
+      <span class="pinfo" id="pg-info"></span>
+      <button id="pg-next" type="button">Next →</button>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="faq">
+  <div class="wrap">
+    <div class="kick2">Straight answers</div>
+    <h2 class="sec">Questions, answered.</h2>
+    <div class="faq">
+      <div class="qa"><h3>Why don't I see prices?</h3><p>Supply prices move with the market. Rather than post numbers that go stale, we price your list live the day you send it — that's how you get the real bulk rate.</p></div>
+      <div class="qa"><h3>Can I order in bulk?</h3><p>Yes — case, pallet and crew-size quantities are the norm here. Put the quantity on each item and we'll price it that way.</p></div>
+      <div class="qa"><h3>How fast do I get my quote?</h3><p>Send the list and we follow up as soon as we've confirmed availability, pricing and delivery. Need it faster? Call or text (346) 337-9514.</p></div>
+      <div class="qa"><h3>Can I just call or text my list?</h3><p>Absolutely — call or text (346) 337-9514, or our Arizona line (928) 227-2868, and we'll build the quote with you.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="contact" style="background:var(--bg2); border-top:1px solid var(--line);">
+  <div class="wrap">
+    <div class="kick2">Talk to a person</div>
+    <h2 class="sec">Contact CCC Supplys.</h2>
+    <div class="cgrid">
+      <div class="cbox"><div class="lab">Call or text — main line</div><div class="big"><a href="tel:+13463379514">(346) 337-9514</a></div></div>
+      <div class="cbox"><div class="lab">Call or text — Arizona</div><div class="big"><a href="tel:+19282272868">(928) 227-2868</a></div></div>
+      <div class="cbox"><div class="lab">Email</div><div class="big" style="font-size:1rem;"><a href="mailto:Crosscountrycontractorssuppliesllc@gmail.com">Crosscountrycontractorssuppliesllc@gmail.com</a></div></div>
+      <div class="cbox"><div class="lab">Mailing address</div><div class="big" style="font-size:1rem;">PO Box 90477<br>Tucson, AZ 85752</div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div>© 2026 CCC Supplys — Cross Country Contractors LLC. All rights reserved.</div>
+    <div><a href="privacy.html" style="color:var(--ink2);">Privacy Policy</a> &nbsp;·&nbsp; Safety supplies. Tools. Built for the work ahead.</div>
   </div>
 </footer>
 
+<div class="stickybar">
+  <a class="sb-call" href="tel:+13463379514">📞 Call (346) 337-9514</a>
+  <button class="sb-quote" type="button" onclick="openDrawer()">Quote List <span class="n" id="sb-count">0</span> ↗</button>
+</div>
+
+<div class="backdrop" id="backdrop" onclick="if(event.target===this)closeDrawer()">
+  <div class="drawer" role="dialog" aria-label="Your quote request">
+    <div class="drawer-head"><h3>Your Quote Request</h3><button class="close-x" type="button" onclick="closeDrawer()" aria-label="Close">✕</button></div>
+    <div id="qlist"></div>
+    <label for="q-name">Full name *</label>
+    <input id="q-name" type="text" autocomplete="name">
+    <label for="q-company">Company or agency</label>
+    <input id="q-company" type="text" autocomplete="organization">
+    <label for="q-email">Work email *</label>
+    <input id="q-email" type="email" autocomplete="email">
+    <label for="q-phone">Phone number</label>
+    <input id="q-phone" type="tel" autocomplete="tel">
+    <label for="q-notes">Delivery ZIP &amp; extra items / notes</label>
+    <textarea id="q-notes" placeholder="ZIP code, delivery notes, or anything not in the catalog…"></textarea>
+    <button class="btn btn-orange submit" type="button" onclick="submitQuote()">Submit for Live Pricing ↗</button>
+    <div class="fine">Submitting opens your email app with the full itemized list addressed to CCC Supplys — attach a material list, spreadsheet or photo there if you have one. Prefer to talk? Call or text (346) 337-9514.</div>
+  </div>
+</div>
+
+<div class="toast" id="toast">Added to your quote list ✓</div>
+
 <script>
-var CATALOG = {
-  "Gloves": ["Disposable nitrile gloves", "Leather work gloves", "Coated grip gloves", "Thermal / insulated gloves", "Cut-resistant gloves"],
-  "Safety & PPE": ["Safety glasses", "Hearing protection", "Hard hats", "Respirators & dust masks", "Face shields", "High-visibility safety vests"],
-  "Workwear & Weather Protection": ["Hi-vis shirts & vests", "Rainwear sets", "Cold-weather jackets", "Winter gloves & hats"],
-  "First Aid & Emergency": ["First aid kits", "First aid refills & bandages", "Sunscreen", "Insect repellent", "Emergency blankets & supplies"],
-  "Traffic & Jobsite Safety": ["Warning / barrier tape", "Traffic cones", "Site marking paint & flags", "Barricades", "Safety fencing"],
-  "Hand Tools": ["Socket sets", "Wrench sets", "Screwdriver sets", "Hammers", "Pliers & cutters", "Tape measures"],
-  "Power & Air Tools": ["Cordless drills & drivers", "Impact drivers", "Air tools", "Compressors", "Batteries & chargers"],
-  "Blades, Bits & Abrasives": ["Drill bit sets", "Saw blades", "Grinding wheels", "Cutting discs", "Sanding discs & belts"],
-  "Electrical & Lighting": ["Extension cords", "Connectors & adapters", "Cable ties", "Work lights", "Batteries (AA/AAA/C/D/9V)"],
-  "Cleaning & Maintenance": ["Shop wipes & rags", "Cleaners & degreasers", "Brooms & brushes", "Trash bags", "Paper towels & dispensers"],
-  "Shop, Fleet & Material Handling": ["Grease & lubricants", "Jacks & jack stands", "Hoses", "Rigging & straps", "Cargo control"],
-  "Hardware & Fasteners": ["Screws & anchors", "Hardware assortments", "Duct & electrical tape", "Sealants & adhesives", "Bolts, nuts & washers"]
-};
-var quote = [];
-function fillDepts(){
-  var sel = document.getElementById('deptSel');
-  sel.innerHTML = '';
-  Object.keys(CATALOG).forEach(function(d){
-    var o = document.createElement('option'); o.value = d; o.textContent = d; sel.appendChild(o);
+const EMAIL = 'Crosscountrycontractorssuppliesllc@gmail.com';
+const DEPTS = [
+  {name:'Gloves', img:'honeycomb-glove.webp', blurb:'Disposable, leather, coated and thermal.'},
+  {name:'Safety & PPE', img:'over-glasses-safety-glasses.webp', blurb:'Eye, hearing, head and respiratory protection.'},
+  {name:'Workwear & Weather Protection', img:'bomber-jacket-printed.webp', blurb:'Hi-vis, jackets, rain gear and cold-weather gear.'},
+  {name:'First Aid & Emergency', img:'first-aid.webp', blurb:'Kits, refills, eyewash and spill response.'},
+  {name:'Traffic & Jobsite Safety', img:'caution-tape.webp', blurb:'Cones, barricades, tape, signs and vests.'},
+  {name:'Hand Tools', img:'hand-tools.webp', blurb:'Wrenches, drivers, cutting and layout tools.'},
+  {name:'Power & Air Tools', img:'category-power-air-1482.webp', blurb:'Drills, impacts, compressors, batteries and chargers.'},
+  {name:'Blades, Bits & Abrasives', img:'drill-bits.webp', blurb:'Cutting, drilling, grinding and sanding.'},
+  {name:'Electrical & Lighting', img:'category-electrical-7908.webp', blurb:'Cords, connectors, cable ties, work lights and batteries.'},
+  {name:'Cleaning & Maintenance', img:'heavy-duty-trash-bags.webp', blurb:'Wipes, cleaners, bags and shop essentials.'},
+  {name:'Shop, Fleet & Material Handling', img:'category-shop-fleet-1295.webp', blurb:'Straps, jacks, storage and vehicle service.'},
+  {name:'Hardware & Fasteners', img:'category-hardware-hwh-screws.webp', blurb:'Screws, anchors, bolts and fittings.'},
+  {name:'Painting Supplies', img:'product-images/page-152.webp', blurb:'Tape, brushes, rollers, spray paint and coatings.'},
+  {name:'Grounds & Landscaping', img:'product-images/page-69.webp', blurb:'Hoses, shovels, rakes and marking supplies.'},
+  {name:'Promotional & Specialty', img:'product-images/page-518.webp', blurb:'Calendars, decals, catalogs and specialty items.'}
+];
+const esc = s => String(s==null?'':s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+let PRODUCTS = [], category = 'All products', subcategory = '', page = 1;
+const PAGE_SIZE = 24;
+let cart = [];
+try { cart = JSON.parse(localStorage.getItem('cccQuote') || '[]'); if (!Array.isArray(cart)) cart = []; cart = cart.filter(x => x && typeof x.sku === 'string' && Number.isInteger(x.qty) && x.qty > 0); } catch(e) { cart = []; }
+
+function deptCount(n){ return PRODUCTS.filter(p => p.category === n).length; }
+function renderDepts(){
+  document.getElementById('dgrid').innerHTML = DEPTS.map(d =>
+    '<button class="dcard" type="button" onclick="pickDept(' + JSON.stringify(d.name) + ')">' +
+    '<img src="' + d.img + '" alt="' + esc(d.name) + '" loading="lazy">' +
+    '<span class="db"><h3>' + esc(d.name) + '</h3><p>' + esc(d.blurb) + '</p>' +
+    '<span class="meta"><span class="cnt">' + deptCount(d.name) + ' products</span><span class="go">Browse →</span></span></span></button>'
+  ).join('');
+}
+function renderDeptChips(){
+  const cats = ['All products'].concat(DEPTS.map(d => d.name));
+  document.getElementById('dept-chips').innerHTML = cats.map(c =>
+    '<button class="chip' + (c === category ? ' active' : '') + '" type="button" onclick="pickDept(' + JSON.stringify(c) + ', true)">' + esc(c) + '</button>'
+  ).join('');
+}
+function renderSubChips(){
+  const box = document.getElementById('sub-chips');
+  if (category === 'All products') { box.innerHTML = ''; return; }
+  const subs = {};
+  PRODUCTS.filter(p => p.category === category).forEach(p => { subs[p.subcategory] = (subs[p.subcategory] || 0) + 1; });
+  const names = Object.keys(subs).sort();
+  if (names.length < 2) { box.innerHTML = ''; return; }
+  box.innerHTML = names.map(s =>
+    '<button class="chip subchip' + (s === subcategory ? ' active' : '') + '" type="button" onclick="pickSub(' + JSON.stringify(s) + ')">' + esc(s) + ' (' + subs[s] + ')</button>'
+  ).join('');
+}
+function filtered(){
+  const q = document.getElementById('search').value.trim().toLowerCase();
+  return PRODUCTS.filter(p => {
+    if (category !== 'All products' && p.category !== category) return false;
+    if (subcategory && p.subcategory !== subcategory) return false;
+    if (q) {
+      const terms = q.split(/\s+/);
+      const hay = (p.name + ' ' + p.category + ' ' + p.subcategory + ' ' + (p.searchTerms || '') + ' ' + p.variants.map(v => v.sku + ' ' + v.label).join(' ')).toLowerCase();
+      if (!terms.every(t => hay.indexOf(t) !== -1)) return false;
+    }
+    return true;
   });
-  fillItems();
 }
-function fillItems(){
-  var d = document.getElementById('deptSel').value;
-  var sel = document.getElementById('itemSel');
-  sel.innerHTML = '';
-  (CATALOG[d] || []).forEach(function(it){
-    var o = document.createElement('option'); o.value = it; o.textContent = it; sel.appendChild(o);
-  });
-}
-function pickDept(d){
-  document.getElementById('deptSel').value = d;
-  fillItems();
-  document.getElementById('builder').scrollIntoView({behavior:'smooth'});
-}
-function addItem(){
-  var dept = document.getElementById('deptSel').value;
-  var custom = document.getElementById('customIn').value.trim();
-  var item = custom || document.getElementById('itemSel').value;
-  var qty = parseInt(document.getElementById('qtyIn').value, 10) || 1;
-  var note = document.getElementById('noteIn').value.trim();
-  if(!item){ return; }
-  quote.push({dept:dept, item:item, qty:qty, note:note});
-  document.getElementById('customIn').value = '';
-  document.getElementById('noteIn').value = '';
-  renderList();
-}
-function removeItem(i){ quote.splice(i,1); renderList(); }
-function renderList(){
-  var wrap = document.getElementById('listWrap');
-  document.getElementById('countPill').textContent = quote.length + (quote.length === 1 ? ' item' : ' items');
-  if(quote.length === 0){
-    wrap.innerHTML = '<p class="empty-note">Your list is empty — pick a department and add your first item.</p>';
-    return;
+function renderCatalog(){
+  renderDeptChips(); renderSubChips();
+  const list = filtered();
+  const pages = Math.max(1, Math.ceil(list.length / PAGE_SIZE));
+  if (page > pages) page = pages;
+  const start = (page - 1) * PAGE_SIZE;
+  const slice = list.slice(start, start + PAGE_SIZE);
+  document.getElementById('cat-title').textContent = category;
+  const skuTotal = list.reduce((n, p) => n + p.variants.length, 0);
+  document.getElementById('cat-count').textContent = list.length + ' products · showing ' + (list.length ? (start + 1) + '–' + Math.min(start + PAGE_SIZE, list.length) : '0') + ' · ' + skuTotal + ' item numbers in this view';
+  const grid = document.getElementById('pgrid');
+  if (!slice.length) { grid.innerHTML = '<div class="empty">Nothing matches that search in this department. Try a different word — or type it into the Fast Quote box above and we\'ll source it.</div>'; }
+  else {
+    grid.innerHTML = slice.map((p, i) => {
+      const gi = PRODUCTS.indexOf(p);
+      const multi = p.variants.length > 1;
+      const sel = multi ? '<select id="v-' + gi + '" aria-label="' + esc(p.optionLabel || 'Option') + '">' + p.variants.map((v, vi) => '<option value="' + vi + '">' + esc(v.label) + '</option>').join('') + '</select>' : '';
+      const itemNo = multi ? 'Item #s ' + p.variants[0].sku + '–' + p.variants[p.variants.length - 1].sku : 'Item #' + p.variants[0].sku;
+      return '<div class="pcard"><img src="' + esc(p.image) + '" alt="' + esc(p.name) + '" loading="lazy">' +
+        '<div class="pb"><div class="fam">Product family shown; selected item may vary.</div>' +
+        '<div class="sub2">' + esc(p.subcategory) + '</div><h4>' + esc(p.name) + '</h4>' +
+        '<div class="itemno">' + esc(itemNo) + ' · Request a quote</div>' + sel +
+        '<div class="addrow"><input class="qty" id="q-' + gi + '" type="number" min="1" value="1" aria-label="Quantity">' +
+        '<button class="add" id="add-' + gi + '" type="button" onclick="addToQuote(' + gi + ')">+ Add to Quote</button></div></div></div>';
+    }).join('');
   }
-  var html = '<table class="quote"><tr><th>Item</th><th>Qty</th><th></th></tr>';
-  quote.forEach(function(q, i){
-    html += '<tr><td><strong>' + esc(q.item) + '</strong><br><span style="color:#8fa9bb;">' + esc(q.dept) + (q.note ? ' — ' + esc(q.note) : '') + '</span></td><td>' + q.qty + '</td><td><button class="rm" title="Remove" onclick="removeItem(' + i + ')">✕</button></td></tr>';
-  });
-  html += '</table>';
-  wrap.innerHTML = html;
+  document.getElementById('pg-info').textContent = 'Page ' + page + ' of ' + pages;
+  document.getElementById('pg-prev').disabled = page <= 1;
+  document.getElementById('pg-next').disabled = page >= pages;
 }
-function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function pickDept(name, fromChip){
+  category = name; subcategory = ''; page = 1;
+  renderCatalog();
+  if (!fromChip) document.getElementById('catalog').scrollIntoView({behavior:'smooth'});
+  else document.getElementById('cat-title').scrollIntoView({behavior:'smooth', block:'center'});
+}
+function pickSub(s){ subcategory = (subcategory === s) ? '' : s; page = 1; renderCatalog(); }
+function saveCart(){ try { localStorage.setItem('cccQuote', JSON.stringify(cart)); } catch(e){} updateCount(); renderDrawer(); }
+function updateCount(){
+  const n = cart.reduce((sum, x) => sum + x.qty, 0);
+  document.getElementById('sb-count').textContent = n;
+}
+function toast(msg){
+  const t = document.getElementById('toast'); t.textContent = msg; t.style.display = 'block';
+  clearTimeout(t._h); t._h = setTimeout(() => { t.style.display = 'none'; }, 2200);
+}
+function addToQuote(gi){
+  const p = PRODUCTS[gi]; if (!p) return;
+  const sel = document.getElementById('v-' + gi);
+  const v = sel ? p.variants[parseInt(sel.value, 10) || 0] : p.variants[0];
+  const qty = Math.max(1, parseInt(document.getElementById('q-' + gi).value, 10) || 1);
+  const ex = cart.find(x => x.sku === v.sku);
+  if (ex) ex.qty += qty; else cart.push({ sku: v.sku, name: v.label, qty: qty });
+  saveCart();
+  const b = document.getElementById('add-' + gi);
+  if (b) { const old = b.textContent; b.textContent = '✓ Added'; b.classList.add('added'); setTimeout(() => { b.textContent = old; b.classList.remove('added'); }, 1400); }
+  toast('Added to your quote list ✓');
+}
+function renderDrawer(){
+  const box = document.getElementById('qlist');
+  if (!cart.length) { box.innerHTML = '<div class="empty" style="padding:6px 0 14px;">No catalog items added yet. You can still send the form with extra items typed below — or attach a material list in the email that opens.</div>'; return; }
+  box.innerHTML = cart.map((x, i) =>
+    '<div class="qrow"><div><div class="qn">' + esc(x.name) + '</div><div class="qs">Item #' + esc(x.sku) + '</div></div>' +
+    '<div class="qq"><input type="number" min="1" value="' + x.qty + '" onchange="setQty(' + i + ', this.value)" aria-label="Quantity"><button class="rm" type="button" onclick="removeItem(' + i + ')">Remove</button></div></div>'
+  ).join('');
+}
+function setQty(i, v){ const n = parseInt(v, 10); if (Number.isInteger(n) && n > 0) cart[i].qty = n; saveCart(); }
+function removeItem(i){ cart.splice(i, 1); saveCart(); }
+function openDrawer(){ renderDrawer(); document.getElementById('backdrop').classList.add('open'); }
+function closeDrawer(){ document.getElementById('backdrop').classList.remove('open'); }
+function mailtoQuote(subject, lines){
+  const body = lines.join('\n');
+  window.location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+}
 function submitQuote(){
-  if(quote.length === 0){ alert('Add at least one item to your quote list first.'); return false; }
-  var name = document.getElementById('cName').value.trim();
-  var company = document.getElementById('cCompany').value.trim();
-  var contact = document.getElementById('cContact').value.trim();
-  var notes = document.getElementById('cNotes').value.trim();
-  var lines = [];
-  lines.push('QUOTE REQUEST — CCC Supplys');
-  lines.push('');
-  quote.forEach(function(q, i){
-    lines.push((i+1) + '. ' + q.item + ' (' + q.dept + ') — Qty: ' + q.qty + (q.note ? ' — Note: ' + q.note : ''));
-  });
-  lines.push('');
-  lines.push('Name: ' + (name || ''));
-  lines.push('Company: ' + (company || ''));
-  lines.push('Contact: ' + (contact || ''));
-  if(notes){ lines.push('Notes: ' + notes); }
-  var subject = encodeURIComponent('Quote Request — CCC Supplys' + (company ? ' (' + company + ')' : ''));
-  var body = encodeURIComponent(lines.join('\n'));
-  window.location.href = 'mailto:Crosscountrycontractorssuppliesllc@gmail.com?subject=' + subject + '&body=' + body;
-  return false;
+  const name = document.getElementById('q-name').value.trim();
+  const email = document.getElementById('q-email').value.trim();
+  if (!name || !email) { toast('Add your name and work email so we can send your quote'); return; }
+  const lines = ['Quote request — CCC Supplys website', ''];
+  if (cart.length) { lines.push('ITEMS:'); cart.forEach(x => lines.push('- ' + x.qty + ' x ' + x.name + ' (Item #' + x.sku + ')')); lines.push(''); }
+  else lines.push('ITEMS: (see notes / attached list)', '');
+  lines.push('Name: ' + name);
+  const co = document.getElementById('q-company').value.trim(); if (co) lines.push('Company/Agency: ' + co);
+  lines.push('Email: ' + email);
+  const ph = document.getElementById('q-phone').value.trim(); if (ph) lines.push('Phone: ' + ph);
+  const nt = document.getElementById('q-notes').value.trim(); if (nt) lines.push('Delivery ZIP / notes: ' + nt);
+  mailtoQuote('Quote Request — ' + name, lines);
 }
-fillDepts();
-renderList();
+function sendFastQuote(){
+  const items = document.getElementById('fq-items').value.trim();
+  if (!items) { toast('Type at least one item so we can price it'); return; }
+  const lines = ['Fast quote request — CCC Supplys website', '', 'ITEMS TO PRICE:', items, ''];
+  const n = document.getElementById('fq-name').value.trim(); if (n) lines.push('Name/Company: ' + n);
+  const c = document.getElementById('fq-contact').value.trim(); if (c) lines.push('Phone/Email: ' + c);
+  mailtoQuote('Fast Quote Request', lines);
+}
+document.getElementById('search').addEventListener('input', () => { page = 1; renderCatalog(); });
+document.getElementById('pg-prev').addEventListener('click', () => { if (page > 1) { page--; renderCatalog(); document.getElementById('cat-title').scrollIntoView({behavior:'smooth', block:'center'}); } });
+document.getElementById('pg-next').addEventListener('click', () => { page++; renderCatalog(); document.getElementById('cat-title').scrollIntoView({behavior:'smooth', block:'center'}); });
+fetch('products.json').then(r => r.json()).then(d => {
+  PRODUCTS = d;
+  const skus = d.reduce((n, p) => n + p.variants.length, 0);
+  document.getElementById('total-line').textContent = d.length + ' product families · ' + skus.toLocaleString() + ' item numbers';
+  renderDepts(); renderCatalog(); updateCount(); renderDrawer();
+}).catch(() => {
+  document.getElementById('pgrid').innerHTML = '<div class="empty">The catalog could not load just now. Call or text (346) 337-9514 and we\'ll build your quote with you.</div>';
+});
+updateCount(); renderDrawer();
 </script>
 </body>
 </html>
