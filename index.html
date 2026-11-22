@@ -372,6 +372,7 @@ const DEPTS = [
   {name:'Promotional & Specialty', img:'product-images/page-518.webp', blurb:'Calendars, decals, catalogs and specialty items.'}
 ];
 const esc = s => String(s==null?'':s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const attr = s => JSON.stringify(String(s==null?'':s)).replace(/&/g,'&amp;').replace(/"/g,'&quot;');
 let PRODUCTS = [], category = 'All products', subcategory = '', page = 1;
 const PAGE_SIZE = 24;
 let cart = [];
@@ -380,7 +381,7 @@ try { cart = JSON.parse(localStorage.getItem('cccQuote') || '[]'); if (!Array.is
 function deptCount(n){ return PRODUCTS.filter(p => p.category === n).length; }
 function renderDepts(){
   document.getElementById('dgrid').innerHTML = DEPTS.map(d =>
-    '<button class="dcard" type="button" onclick="pickDept(' + JSON.stringify(d.name) + ')">' +
+    '<button class="dcard" type="button" onclick="pickDept(' + attr(d.name) + ')">' +
     '<img src="' + d.img + '" alt="' + esc(d.name) + '" loading="lazy">' +
     '<span class="db"><h3>' + esc(d.name) + '</h3><p>' + esc(d.blurb) + '</p>' +
     '<span class="meta"><span class="cnt">' + deptCount(d.name) + ' products</span><span class="go">Browse →</span></span></span></button>'
@@ -389,7 +390,7 @@ function renderDepts(){
 function renderDeptChips(){
   const cats = ['All products'].concat(DEPTS.map(d => d.name));
   document.getElementById('dept-chips').innerHTML = cats.map(c =>
-    '<button class="chip' + (c === category ? ' active' : '') + '" type="button" onclick="pickDept(' + JSON.stringify(c) + ', true)">' + esc(c) + '</button>'
+    '<button class="chip' + (c === category ? ' active' : '') + '" type="button" onclick="pickDept(' + attr(c) + ', true)">' + esc(c) + '</button>'
   ).join('');
 }
 function renderSubChips(){
@@ -400,7 +401,7 @@ function renderSubChips(){
   const names = Object.keys(subs).sort();
   if (names.length < 2) { box.innerHTML = ''; return; }
   box.innerHTML = names.map(s =>
-    '<button class="chip subchip' + (s === subcategory ? ' active' : '') + '" type="button" onclick="pickSub(' + JSON.stringify(s) + ')">' + esc(s) + ' (' + subs[s] + ')</button>'
+    '<button class="chip subchip' + (s === subcategory ? ' active' : '') + '" type="button" onclick="pickSub(' + attr(s) + ')">' + esc(s) + ' (' + subs[s] + ')</button>'
   ).join('');
 }
 function filtered(){
