@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CCC Supplys — Safety Supplies, Tools & Contractor Essentials | Cross Country Contractors LLC</title>
+<meta name="description" content="CCC Supplys (Cross Country Contractors LLC) — PPE, tools, shop supplies and maintenance essentials for contractors, government agencies and businesses. Build your list and request a quote.">
+<style>
+  :root{
+    --ink:#14202b; --ink2:#3c4c5c; --paper:#f7f5f0; --card:#ffffff;
+    --accent:#e8641c; --accent-dark:#c24e10; --navy:#10222f; --line:#e2ddd2;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  body{font-family:Georgia,'Times New Roman',serif; background:var(--paper); color:var(--ink); line-height:1.55;}
+  a{color:var(--accent-dark);}
+  .wrap{max-width:1080px; margin:0 auto; padding:0 20px;}
+  header{background:var(--navy); color:#fff; position:sticky; top:0; z-index:50; box-shadow:0 2px 10px rgba(0,0,0,.25);}
+  .header-in{display:flex; flex-wrap:wrap; align-items:center; gap:10px 22px; padding:14px 0;}
+  .brand{font-size:1.55rem; font-weight:bold; letter-spacing:.5px; color:#fff; text-decoration:none;}
+  .brand span{color:var(--accent);}
+  .brand small{display:block; font-size:.72rem; font-weight:normal; letter-spacing:2px; text-transform:uppercase; color:#b9c7d2; font-family:Arial,Helvetica,sans-serif;}
+  nav{margin-left:auto; display:flex; flex-wrap:wrap; gap:4px 18px; font-family:Arial,Helvetica,sans-serif; font-size:.92rem;}
+  nav a{color:#dfe8ee; text-decoration:none;}
+  nav a:hover{color:#fff; text-decoration:underline;}
+  .callbtn{background:var(--accent); color:#fff !important; padding:7px 14px; border-radius:6px; font-weight:bold;}
+  .callbtn:hover{background:var(--accent-dark); text-decoration:none !important;}
+  .hero{background:linear-gradient(160deg,#16303f 0%,#10222f 60%,#0b1822 100%); color:#fff; padding:64px 0 54px;}
+  .hero .kicker{font-family:Arial,Helvetica,sans-serif; text-transform:uppercase; letter-spacing:3px; font-size:.78rem; color:#f0a35e; margin-bottom:14px;}
+  .hero h1{font-size:2.7rem; line-height:1.12; max-width:720px;}
+  .hero h1 em{color:var(--accent); font-style:normal;}
+  .hero p.lede{margin-top:16px; font-size:1.13rem; color:#cfdde7; max-width:640px;}
+  .hero .cta-row{margin-top:28px; display:flex; flex-wrap:wrap; gap:12px; font-family:Arial,Helvetica,sans-serif;}
+  .btn{display:inline-block; padding:13px 24px; border-radius:8px; text-decoration:none; font-weight:bold; font-size:1rem;}
+  .btn-primary{background:var(--accent); color:#fff;}
+  .btn-primary:hover{background:var(--accent-dark);}
+  .btn-ghost{border:2px solid #5b7285; color:#eaf1f6;}
+  .btn-ghost:hover{border-color:#fff; color:#fff;}
+  .ship-line{margin-top:22px; font-family:Arial,Helvetica,sans-serif; font-size:.95rem; color:#a9bcc9;}
+  .essentials{padding:44px 0 6px;}
+  .essentials h2, .section h2{font-size:1.7rem; margin-bottom:6px;}
+  .essentials .sub, .section .sub{color:var(--ink2); margin-bottom:22px;}
+  .card-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px;}
+  .ecard{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px 18px;}
+  .ecard .num{font-family:Arial,Helvetica,sans-serif; color:var(--accent); font-weight:bold; font-size:.85rem; letter-spacing:1px;}
+  .ecard h3{margin:6px 0 4px; font-size:1.15rem;}
+  .ecard p{color:var(--ink2); font-size:.95rem;}
+  .section{padding:44px 0;}
+  .serve-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:12px; margin-top:8px;}
+  .serve-grid div{background:var(--card); border:1px solid var(--line); border-left:5px solid var(--accent); border-radius:8px; padding:14px 16px; font-size:1.02rem;}
+  .dept-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px;}
+  .dept{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px;}
+  .dept h3{font-size:1.08rem; margin-bottom:4px;}
+  .dept p{color:var(--ink2); font-size:.93rem; margin-bottom:12px; min-height:42px;}
+  .dept button, .addbtn{font-family:Arial,Helvetica,sans-serif; background:var(--navy); color:#fff; border:none; padding:9px 14px; border-radius:6px; cursor:pointer; font-size:.9rem; font-weight:bold;}
+  .dept button:hover, .addbtn:hover{background:var(--accent-dark);}
+  .steps{display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px;}
+  .step{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:22px 18px;}
+  .step .n{font-size:1.9rem; color:var(--accent); font-weight:bold; font-family:Arial,Helvetica,sans-serif;}
+  .step h3{margin:4px 0 6px;}
+  .step p{color:var(--ink2); font-size:.96rem;}
+  .builder{background:var(--navy); color:#eaf1f6; border-radius:16px; padding:28px; margin:10px 0 6px;}
+  .builder h2{color:#fff;}
+  .builder .sub{color:#a9bcc9;}
+  .bgrid{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+  @media (max-width:820px){ .bgrid{grid-template-columns:1fr;} .hero h1{font-size:2.1rem;} }
+  .builder label{font-family:Arial,Helvetica,sans-serif; font-size:.85rem; letter-spacing:.4px; display:block; margin:12px 0 5px; color:#cfe0ec;}
+  .builder select, .builder input, .builder textarea{width:100%; padding:10px 12px; border-radius:7px; border:1px solid #33505f; background:#0d1d29; color:#fff; font-size:.98rem; font-family:Arial,Helvetica,sans-serif;}
+  .builder textarea{resize:vertical;}
+  .qty-row{display:flex; gap:10px;}
+  .qty-row .q{flex:0 0 92px;}
+  .qty-row .grow{flex:1;}
+  table.quote{width:100%; border-collapse:collapse; font-family:Arial,Helvetica,sans-serif; font-size:.92rem; margin-top:6px;}
+  table.quote th{text-align:left; color:#a9bcc9; font-weight:normal; border-bottom:1px solid #33505f; padding:6px 4px;}
+  table.quote td{border-bottom:1px solid #22394a; padding:7px 4px; vertical-align:top;}
+  table.quote .rm{background:none; border:none; color:#f0937e; cursor:pointer; font-size:1rem; padding:0 2px;}
+  .empty-note{color:#8fa9bb; font-family:Arial,Helvetica,sans-serif; font-size:.92rem; padding:10px 0;}
+  .submit-row{margin-top:18px; display:flex; flex-wrap:wrap; gap:12px; align-items:center;}
+  .count-pill{font-family:Arial,Helvetica,sans-serif; background:#0d1d29; border:1px solid #33505f; padding:9px 14px; border-radius:20px; font-size:.9rem;}
+  .fineprint{font-family:Arial,Helvetica,sans-serif; font-size:.82rem; color:#8fa9bb; margin-top:12px;}
+  .faq details{background:var(--card); border:1px solid var(--line); border-radius:10px; padding:16px 18px; margin-bottom:10px;}
+  .faq summary{font-weight:bold; cursor:pointer; font-size:1.03rem;}
+  .faq p{color:var(--ink2); margin-top:8px;}
+  .contact-grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px;}
+  .cbox{background:var(--card); border:1px solid var(--line); border-radius:12px; padding:20px 18px;}
+  .cbox h3{margin-bottom:8px;}
+  .cbox p{color:var(--ink2); font-size:.97rem;}
+  .cbox a{font-weight:bold;}
+  footer{background:var(--navy); color:#b9c7d2; padding:34px 0 40px; margin-top:20px; font-size:.95rem;}
+  footer .brand{font-size:1.25rem;}
+  footer a{color:#e8b48c;}
+  .foot-grid{display:flex; flex-wrap:wrap; gap:8px 40px; margin-top:10px; font-family:Arial,Helvetica,sans-serif; font-size:.9rem;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <a class="brand" href="#top">CCC <span>Supplys</span><small>Cross Country Contractors LLC</small></a>
+    <nav>
+      <a href="#departments">Shop Departments</a>
+      <a href="#quote">Quote Process</a>
+      <a href="#about">About Us</a>
+      <a href="#contact">Contact</a>
+      <a class="callbtn" href="tel:+13463379514">Call: (346) 337-9514</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div class="kicker">Serving contractors, government &amp; business customers</div>
+    <h1>Safety supplies. Tools. <em>Built for the work ahead.</em></h1>
+    <p class="lede">PPE, tools, shop supplies and maintenance essentials for contractors, government agencies, businesses and organizations of all kinds — from big operations to small, family-owned crews.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#builder">Build Your Quote List</a>
+      <a class="btn btn-ghost" href="#departments">Browse Departments</a>
+    </div>
+    <p class="ship-line">Send us your list — we confirm availability, pricing and delivery, then the supplies move.</p>
+  </div>
+</section>
+
+<section class="essentials">
+  <div class="wrap">
+    <h2>Everyday essentials, built around your crew</h2>
+    <p class="sub">The gear your team reaches for every day — stocked and ready to quote.</p>
+    <div class="card-row">
+      <div class="ecard"><div class="num">01</div><h3>Work Gloves</h3><p>Disposable, leather, coated and thermal — the right glove for every hand on the job.</p></div>
+      <div class="ecard"><div class="num">02</div><h3>First Aid</h3><p>Kits, refills and emergency essentials that keep a site ready for anything.</p></div>
+      <div class="ecard"><div class="num">03</div><h3>Tools &amp; Bits</h3><p>Hand tools, power tools, blades and bits that hold up to daily work.</p></div>
+      <div class="ecard"><div class="num">04</div><h3>Shop Supplies</h3><p>Grease, lubricants, cleaners and maintenance essentials that keep operations running.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="about">
+  <div class="wrap">
+    <h2>Who we serve</h2>
+    <p class="sub">CCC Supplys helps keep crews equipped and operations running.</p>
+    <div class="serve-grid">
+      <div>Contractors &amp; Construction Crews</div>
+      <div>Federal, Tribal, State &amp; Local Government Departments</div>
+      <div>Civil Infrastructure</div>
+      <div>Energy Companies</div>
+      <div>Industrial &amp; Commercial Operations</div>
+      <div>Small &amp; Family-Owned Businesses</div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="departments" style="padding-top:10px;">
+  <div class="wrap">
+    <h2>Shop by department</h2>
+    <p class="sub">Go straight to the supplies you need. Pick a department to start your quote list with it.</p>
+    <div class="dept-grid">
+      <div class="dept"><h3>Gloves</h3><p>Disposable, leather, coated and thermal.</p><button onclick="pickDept('Gloves')">Add Gloves Items</button></div>
+      <div class="dept"><h3>Safety &amp; PPE</h3><p>Eye, hearing, head and respiratory protection.</p><button onclick="pickDept('Safety &amp; PPE')">Add Safety &amp; PPE Items</button></div>
+      <div class="dept"><h3>Workwear &amp; Weather Protection</h3><p>Hi-vis, rainwear and cold-weather gear.</p><button onclick="pickDept('Workwear &amp; Weather Protection')">Add Workwear Items</button></div>
+      <div class="dept"><h3>First Aid &amp; Emergency</h3><p>First aid, sunscreen and outdoor protection.</p><button onclick="pickDept('First Aid &amp; Emergency')">Add First Aid Items</button></div>
+      <div class="dept"><h3>Traffic &amp; Jobsite Safety</h3><p>Warning tape, site marking and protection.</p><button onclick="pickDept('Traffic &amp; Jobsite Safety')">Add Traffic &amp; Jobsite Items</button></div>
+      <div class="dept"><h3>Hand Tools</h3><p>Sockets, wrenches and everyday essentials.</p><button onclick="pickDept('Hand Tools')">Add Hand Tool Items</button></div>
+      <div class="dept"><h3>Power &amp; Air Tools</h3><p>Cordless and pneumatic tools, compressors, batteries and chargers.</p><button onclick="pickDept('Power &amp; Air Tools')">Add Power &amp; Air Items</button></div>
+      <div class="dept"><h3>Blades, Bits &amp; Abrasives</h3><p>Cutting, drilling, grinding and sanding.</p><button onclick="pickDept('Blades, Bits &amp; Abrasives')">Add Blades &amp; Bits Items</button></div>
+      <div class="dept"><h3>Electrical &amp; Lighting</h3><p>Cords, connectors, cable ties, work lights and batteries.</p><button onclick="pickDept('Electrical &amp; Lighting')">Add Electrical Items</button></div>
+      <div class="dept"><h3>Cleaning &amp; Maintenance</h3><p>Wipes, cleaners and shop essentials.</p><button onclick="pickDept('Cleaning &amp; Maintenance')">Add Cleaning Items</button></div>
+      <div class="dept"><h3>Shop, Fleet &amp; Material Handling</h3><p>Vehicle service, jacks, hoses, rigging and cargo control.</p><button onclick="pickDept('Shop, Fleet &amp; Material Handling')">Add Shop &amp; Fleet Items</button></div>
+      <div class="dept"><h3>Hardware &amp; Fasteners</h3><p>Screws, anchors, hardware assortments, tapes and sealants.</p><button onclick="pickDept('Hardware &amp; Fasteners')">Add Hardware Items</button></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="quote" style="padding-top:6px;">
+  <div class="wrap">
+    <h2>Request a quote in three steps</h2>
+    <p class="sub">From your list to our inbox. After you submit, we follow up as soon as possible to confirm availability, pricing and delivery details.</p>
+    <div class="steps">
+      <div class="step"><div class="n">01</div><h3>Choose products</h3><p>Browse the departments, or add any item by name or item number.</p></div>
+      <div class="step"><div class="n">02</div><h3>Build your list</h3><p>Choose items, quantities and any special notes — case or pack sizes included.</p></div>
+      <div class="step"><div class="n">03</div><h3>Submit your request</h3><p>Add your contact details and send it. We confirm products, quantities, pricing and delivery with you directly.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="builder" style="padding-top:6px;">
+  <div class="wrap">
+    <div class="builder">
+      <h2>Build your quote list</h2>
+      <p class="sub">Add items from any department — or type in anything you need, even if it's not listed. Nothing is an order until we confirm it with you.</p>
+      <div class="bgrid">
+        <div>
+          <label for="deptSel">Department</label>
+          <select id="deptSel" onchange="fillItems()"></select>
+          <label for="itemSel">Item</label>
+          <select id="itemSel"></select>
+          <label>Quantity &amp; your own item (optional)</label>
+          <div class="qty-row">
+            <div class="q"><input id="qtyIn" type="number" min="1" value="1" aria-label="Quantity"></div>
+            <div class="grow"><input id="customIn" type="text" placeholder="Or type any item / item number"></div>
+          </div>
+          <label for="noteIn">Note for this item (size, case/pack, brand preference)</label>
+          <input id="noteIn" type="text" placeholder="e.g. Size L, case of 12">
+          <div style="margin-top:16px;"><button class="addbtn" onclick="addItem()">+ Add to Quote List</button></div>
+
+          <label for="cName">Your name</label>
+          <input id="cName" type="text" placeholder="Full name">
+          <label for="cCompany">Company / Agency</label>
+          <input id="cCompany" type="text" placeholder="Company name">
+          <label for="cContact">Email or phone</label>
+          <input id="cContact" type="text" placeholder="How we reach you">
+          <label for="cNotes">Anything else we should know?</label>
+          <textarea id="cNotes" rows="3" placeholder="Delivery location, timing, special requests"></textarea>
+        </div>
+        <div>
+          <label>Your quote list</label>
+          <div id="listWrap"></div>
+          <div class="submit-row">
+            <span class="count-pill" id="countPill">0 items</span>
+            <a class="btn btn-primary" id="submitBtn" href="#" onclick="return submitQuote()">Submit Quote Request</a>
+          </div>
+          <p class="fineprint">Submitting opens your email app with the list addressed to CCC Supplys — just press send. Prefer to talk? Call <a href="tel:+13463379514" style="color:#f0a35e;">(346) 337-9514</a> or text us your list. A request does not place an order; we confirm everything with you first.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section faq" style="padding-top:10px;">
+  <div class="wrap">
+    <h2>A few useful details</h2>
+    <p class="sub">Questions are welcome — here are the ones we hear most.</p>
+    <details><summary>How do I get pricing?</summary><p>Build your quote list above, add your contact details and submit. We will confirm pricing, availability, pack quantities and delivery with you directly.</p></details>
+    <details><summary>Can I request cases or bulk quantities?</summary><p>Yes. Set the quantity you need and include any preferred case or pack sizes in the item notes, then submit. We will confirm the available options.</p></details>
+    <details><summary>Where do you deliver?</summary><p>Tell us where the job is in your request notes — we confirm delivery options, timing and any shipping cost right in your quote, before anything is ordered.</p></details>
+    <details><summary>Does this site accept orders or payments?</summary><p>No. The site lets you browse departments and send a quote request directly to CCC Supplys. Orders and payments are arranged with us after your quote is confirmed.</p></details>
+    <details><summary>Can I just call or text my list instead?</summary><p>Absolutely. Call or text <a href="tel:+13463379514">(346) 337-9514</a> — or our Arizona line, <a href="tel:+19282272868">(928) 227-2868</a> — and read us the list. Same fast follow-up.</p></details>
+  </div>
+</section>
+
+<section class="section" id="contact" style="padding-top:6px;">
+  <div class="wrap">
+    <h2>Send us a message</h2>
+    <p class="sub">Have a question that doesn't need a quote? Reach out any of these ways and we'll reply as soon as possible.</p>
+    <div class="contact-grid">
+      <div class="cbox"><h3>📞 Call or Text</h3><p>Main line: <a href="tel:+13463379514">(346) 337-9514</a><br>Arizona: <a href="tel:+19282272868">(928) 227-2868</a><br>Text your list and we'll work it up.</p></div>
+      <div class="cbox"><h3>✉️ Email</h3><p><a href="mailto:Crosscountrycontractorssuppliesllc@gmail.com">Crosscountrycontractorssuppliesllc@gmail.com</a><br>Send your list, item numbers, or a photo of what you need.</p></div>
+      <div class="cbox"><h3>📬 Mailing Address</h3><p>CCC Supplys<br>Cross Country Contractors LLC<br>PO Box 90477<br>Tucson, AZ 85752</p></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <a class="brand" href="#top" style="color:#fff; text-decoration:none;">CCC <span style="color:var(--accent);">Supplys</span></a>
+    <p style="margin-top:6px;">Supplies for the work ahead — PPE, tools, shop supplies and maintenance essentials for contractors, government agencies and businesses.</p>
+    <div class="foot-grid">
+      <span>Call: <a href="tel:+13463379514">(346) 337-9514</a></span>
+      <span>Arizona: <a href="tel:+19282272868">(928) 227-2868</a></span>
+      <span>PO Box 90477, Tucson, AZ 85752</span>
+      <span><a href="privacy.html">Privacy Policy</a></span>
+    </div>
+    <p style="margin-top:14px; font-size:.85rem; color:#7e93a3;">© 2026 Cross Country Contractors LLC. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+var CATALOG = {
+  "Gloves": ["Disposable nitrile gloves", "Leather work gloves", "Coated grip gloves", "Thermal / insulated gloves", "Cut-resistant gloves"],
+  "Safety & PPE": ["Safety glasses", "Hearing protection", "Hard hats", "Respirators & dust masks", "Face shields", "High-visibility safety vests"],
+  "Workwear & Weather Protection": ["Hi-vis shirts & vests", "Rainwear sets", "Cold-weather jackets", "Winter gloves & hats"],
+  "First Aid & Emergency": ["First aid kits", "First aid refills & bandages", "Sunscreen", "Insect repellent", "Emergency blankets & supplies"],
+  "Traffic & Jobsite Safety": ["Warning / barrier tape", "Traffic cones", "Site marking paint & flags", "Barricades", "Safety fencing"],
+  "Hand Tools": ["Socket sets", "Wrench sets", "Screwdriver sets", "Hammers", "Pliers & cutters", "Tape measures"],
+  "Power & Air Tools": ["Cordless drills & drivers", "Impact drivers", "Air tools", "Compressors", "Batteries & chargers"],
+  "Blades, Bits & Abrasives": ["Drill bit sets", "Saw blades", "Grinding wheels", "Cutting discs", "Sanding discs & belts"],
+  "Electrical & Lighting": ["Extension cords", "Connectors & adapters", "Cable ties", "Work lights", "Batteries (AA/AAA/C/D/9V)"],
+  "Cleaning & Maintenance": ["Shop wipes & rags", "Cleaners & degreasers", "Brooms & brushes", "Trash bags", "Paper towels & dispensers"],
+  "Shop, Fleet & Material Handling": ["Grease & lubricants", "Jacks & jack stands", "Hoses", "Rigging & straps", "Cargo control"],
+  "Hardware & Fasteners": ["Screws & anchors", "Hardware assortments", "Duct & electrical tape", "Sealants & adhesives", "Bolts, nuts & washers"]
+};
+var quote = [];
+function fillDepts(){
+  var sel = document.getElementById('deptSel');
+  sel.innerHTML = '';
+  Object.keys(CATALOG).forEach(function(d){
+    var o = document.createElement('option'); o.value = d; o.textContent = d; sel.appendChild(o);
+  });
+  fillItems();
+}
+function fillItems(){
+  var d = document.getElementById('deptSel').value;
+  var sel = document.getElementById('itemSel');
+  sel.innerHTML = '';
+  (CATALOG[d] || []).forEach(function(it){
+    var o = document.createElement('option'); o.value = it; o.textContent = it; sel.appendChild(o);
+  });
+}
+function pickDept(d){
+  document.getElementById('deptSel').value = d;
+  fillItems();
+  document.getElementById('builder').scrollIntoView({behavior:'smooth'});
+}
+function addItem(){
+  var dept = document.getElementById('deptSel').value;
+  var custom = document.getElementById('customIn').value.trim();
+  var item = custom || document.getElementById('itemSel').value;
+  var qty = parseInt(document.getElementById('qtyIn').value, 10) || 1;
+  var note = document.getElementById('noteIn').value.trim();
+  if(!item){ return; }
+  quote.push({dept:dept, item:item, qty:qty, note:note});
+  document.getElementById('customIn').value = '';
+  document.getElementById('noteIn').value = '';
+  renderList();
+}
+function removeItem(i){ quote.splice(i,1); renderList(); }
+function renderList(){
+  var wrap = document.getElementById('listWrap');
+  document.getElementById('countPill').textContent = quote.length + (quote.length === 1 ? ' item' : ' items');
+  if(quote.length === 0){
+    wrap.innerHTML = '<p class="empty-note">Your list is empty — pick a department and add your first item.</p>';
+    return;
+  }
+  var html = '<table class="quote"><tr><th>Item</th><th>Qty</th><th></th></tr>';
+  quote.forEach(function(q, i){
+    html += '<tr><td><strong>' + esc(q.item) + '</strong><br><span style="color:#8fa9bb;">' + esc(q.dept) + (q.note ? ' — ' + esc(q.note) : '') + '</span></td><td>' + q.qty + '</td><td><button class="rm" title="Remove" onclick="removeItem(' + i + ')">✕</button></td></tr>';
+  });
+  html += '</table>';
+  wrap.innerHTML = html;
+}
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function submitQuote(){
+  if(quote.length === 0){ alert('Add at least one item to your quote list first.'); return false; }
+  var name = document.getElementById('cName').value.trim();
+  var company = document.getElementById('cCompany').value.trim();
+  var contact = document.getElementById('cContact').value.trim();
+  var notes = document.getElementById('cNotes').value.trim();
+  var lines = [];
+  lines.push('QUOTE REQUEST — CCC Supplys');
+  lines.push('');
+  quote.forEach(function(q, i){
+    lines.push((i+1) + '. ' + q.item + ' (' + q.dept + ') — Qty: ' + q.qty + (q.note ? ' — Note: ' + q.note : ''));
+  });
+  lines.push('');
+  lines.push('Name: ' + (name || ''));
+  lines.push('Company: ' + (company || ''));
+  lines.push('Contact: ' + (contact || ''));
+  if(notes){ lines.push('Notes: ' + notes); }
+  var subject = encodeURIComponent('Quote Request — CCC Supplys' + (company ? ' (' + company + ')' : ''));
+  var body = encodeURIComponent(lines.join('\n'));
+  window.location.href = 'mailto:Crosscountrycontractorssuppliesllc@gmail.com?subject=' + subject + '&body=' + body;
+  return false;
+}
+fillDepts();
+renderList();
+</script>
+</body>
+</html>
